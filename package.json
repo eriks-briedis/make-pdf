@@ -1,0 +1,10 @@
+{
+  "name": "make-pdf",
+  "version": "1.0.0",
+  "main": "make.js",
+  "dependencies": {
+    "commander": "^9.3.0",
+    "pdf-creator-node": "^2.3.4",
+    "pdf-merger-js": "^3.4.0"
+  }
+}
