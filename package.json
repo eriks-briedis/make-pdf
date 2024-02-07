@@ -1,10 +1,35 @@
 {
   "name": "make-pdf",
   "version": "1.0.0",
-  "main": "make.js",
+  "sideEffects": false,
+  "scripts": {
+    "build": "remix build",
+    "dev": "remix dev --manual",
+    "lint": "eslint --ignore-path .gitignore .",
+    "start": "remix-serve ./build/index.js",
+    "typecheck": "tsc"
+  },
   "dependencies": {
+    "@remix-run/node": "^2.6.0",
+    "@remix-run/react": "^2.6.0",
+    "@remix-run/serve": "^2.6.0",
     "commander": "^9.3.0",
+    "isbot": "^4.4.0",
     "pdf-creator-node": "^2.3.4",
-    "pdf-merger-js": "^3.4.0"
+    "pdf-merger-js": "^3.4.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@remix-run/dev": "^2.6.0",
+    "@remix-run/eslint-config": "^2.6.0",
+    "@types/react": "^18.2.55",
+    "@types/react-dom": "^18.2.19",
+    "eslint": "^8.56.0",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
